@@ -75,6 +75,7 @@ void setup()
   // Select PCINT20 Bit4 = 1 (Pin D4)
   PCMSK2 |= _BV(rpmInPin);
 
+	// Disable ugly rgb of nano mini board
   CRGB leds[3] = {
     {0, 0, 0},
     {0, 0, 0},
