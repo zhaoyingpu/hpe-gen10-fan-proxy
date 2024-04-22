@@ -6,7 +6,7 @@ Max-Sum's connector pin define.
 
 ![post-8123-0-98784900-1394609613](https://raw.githubusercontent.com/Max-Sum/HP-fan-proxy/master/images/post-8123-0-98784900-1394609613.png)
 
-Connector is 2x3 PHDS2.0, Red Star Electronics HX20017.[taobao link](https://m.tb.cn/h.gZnKOee5pgJFSKW) 
+Connector is 2x3 PHDS2.0, 红星电业 HX20017.[taobao link](https://m.tb.cn/h.gZnKOee5pgJFSKW) 
 
 ![IMG_4152.JPG](https://raw.githubusercontent.com/zhaoyingpu/hpe-gen10-fan-proxy/master/images/IMG_4152.JPG)
 
