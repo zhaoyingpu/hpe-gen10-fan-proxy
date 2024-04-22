@@ -13,6 +13,11 @@ Connector is 2x3 PHDS2.0, Red Star Electronics HX20017.[taobao link](https://m.t
 Schematic diagram
 ![hpe_fan_proxy_bb.png](https://raw.githubusercontent.com/zhaoyingpu/hpe-gen10-fan-proxy/master/images/hpe_fan_proxy_bb.png)
 
+Arduino Nano Mini, [taobao link](https://m.tb.cn/h.gZMNWzPMlKCnLvb) 
+![arduino_nano_mini.png](https://raw.githubusercontent.com/zhaoyingpu/hpe-gen10-fan-proxy/master/images/arduino_nano_mini.png)
+
+TurboFan 4010, [taobao link](https://m.tb.cn/h.g01uqRhDhxVOKu0) 
+
 ### Software
 An RPM translater is implemented to generate the corresponding RPM pulse signals (2 pulse per revolution) based on the input signals from the HPE, which uses delay when the RPM is less than 900, and PWM output otherwise. Of course this function is useless on the HPE, it just needs a pull down signal to confirm the fan is present.
 
