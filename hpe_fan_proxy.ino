@@ -48,7 +48,7 @@ void setup()
          | _BV(CS10);   // prescaler = 1
   ICR1   = pwmTop;      // TOP = 320
 
-  // Configure Timer 1 for PWM @ 7.8125 kHz.
+  // Configure Timer 2 for PWM @ 7.8125 kHz. for tach simulate
   TCCR2A = 0;
   TCCR2B = 0;
   TCNT2  = 0;
@@ -59,6 +59,7 @@ void setup()
   OCR2A  = 255;
 
   pinMode(pwmInPin, INPUT);
+  // Tachometer output signal need pullup to 5v, ref https://noctua.at/pub/media/wysiwyg/Noctua_PWM_specifications_white_paper.pdf
   pinMode(rpmInPin, INPUT_PULLUP);
   pinMode(pwmOutPin, OUTPUT);
   pinMode(pwm2OutPin, OUTPUT);
@@ -75,7 +76,7 @@ void setup()
   // Select PCINT20 Bit4 = 1 (Pin D4)
   PCMSK2 |= _BV(rpmInPin);
 
-	// Disable ugly rgb of nano mini board
+  // Disable ugly rgb of nano mini board
   CRGB leds[3] = {
     {0, 0, 0},
     {0, 0, 0},
